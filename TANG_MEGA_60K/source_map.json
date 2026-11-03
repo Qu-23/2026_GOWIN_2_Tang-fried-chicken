@@ -1,0 +1,533 @@
+{
+  "fpga/snapshot/audio_mega60k.cst": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/audio_mega60k.cst",
+    "sha256": "0843c64215f63d425c82b1c0084b9d9d2b91c5e53d3c28bad398cbef37e82112"
+  },
+  "fpga/snapshot/hdmi.cst": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/hdmi.cst",
+    "sha256": "937ead1b813f91089492dc2371607cd1e211b83ae3d64ffdc0410c38c2d185cb"
+  },
+  "fpga/snapshot/hdmi.sdc": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/hdmi.sdc",
+    "sha256": "17140e693054c0373d29e1c3e0ae8a55ac03bde0453344ef870e73fa0b6f8dd5"
+  },
+  "fpga/snapshot/src/audio_drive.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/audio_drive.v",
+    "sha256": "e9fa6b7739f2cd813070ec6c4b8900348c5fb93502cb659ec724d3cbb018407e",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/audio_drive_lsbj.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/audio_drive_lsbj.v",
+    "sha256": "e287c0f37c24a55af6195bfbe1b0e64184e1947f3e79d685bf25ddd7eac936c4",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/audio_mega60k_main.sdc": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/audio_mega60k_main.sdc",
+    "sha256": "4bb2dd0d984f9e14e1dd771afd396af249c3fa90f92d36103300ae70a8a822cf"
+  },
+  "fpga/snapshot/src/bt_report.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/bt_report.v",
+    "sha256": "d3c96efe33a444a9ce4ae2f50864af15bdf00333d5a608969541fa329b5f3323"
+  },
+  "fpga/snapshot/src/bt_song.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/bt_song.v",
+    "sha256": "d774c0af19deb41d731cd711fbd3f8f135875cd76ea4216f5b14fd0f1e3bdbd7",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/bt_text.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/bt_text.v",
+    "sha256": "7e1bdcb883681b378fa02a22af957adc7fe42a785d81eeccbb2ecf5e92fab005",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/exp_env.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/exp_env.v",
+    "sha256": "e18407066ba378b90535cc24845dac7ae7fc773594233b9f4e35e320442f19c5",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/filt_lp.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/filt_lp.v",
+    "sha256": "f6f1e659920b0de9d0d8264b5c06cd4039b3c0ed04c041f6fcada7ef144f5590",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/fx_allpass.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/fx_allpass.v",
+    "sha256": "1abce04041852efd3dc96abf17a684003f9a524dde162852ca3f09fdc1bb55c2",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/fx_comb.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/fx_comb.v",
+    "sha256": "40c45b1b8e7467782c3df1097868bbb173a55768009a20a777165feaf23f5917",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/fx_delay.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/fx_delay.v",
+    "sha256": "84f2edda3a54b89a0266bff5b7909600ce64f8f51bf61cd65b486309d13ded4a",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/fx_engine.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/fx_engine.v",
+    "sha256": "9b01803a9ecb4628eabe0f84e11e6bb23a3ce77eea466b919728ac92863e8c3d",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/gowin_clkdiv/gowin_clkdiv.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/gowin_clkdiv/gowin_clkdiv.v",
+    "sha256": "83150cd19598be726e5217e08af1ac79eeb8f43e8ca358e73f3f56c94aa90262"
+  },
+  "fpga/snapshot/src/gowin_osc/gowin_osc.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/gowin_osc/gowin_osc.v",
+    "sha256": "39e107f747bb2cd1ef1cbcb7e400a9954ae8529b3a2b9370652d9a6c891118c7"
+  },
+  "fpga/snapshot/src/gowin_pll/gowin_pll.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/gowin_pll/gowin_pll.v",
+    "sha256": "5210ac7a90e8d041152b224269ce5c94bd88074238c68f1d76a598659c355649"
+  },
+  "fpga/snapshot/src/hdmi/fft/README.md": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/fft/README.md",
+    "sha256": "83b03b5edca424d12c2174b764f92f87631a61905556444f86120fd3ff823652"
+  },
+  "fpga/snapshot/src/hdmi/fft/visual_fft.sv": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/fft/visual_fft.sv",
+    "sha256": "48744b9148fd4f8b90377263727e79a1b0ca12d722679d098657265657148d65"
+  },
+  "fpga/snapshot/src/hdmi/fft/visual_frame_store.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/fft/visual_frame_store.v",
+    "sha256": "f66ea5c2547736bbee5decdb456927f1a47a2884086105f187d69e1f1cbb3bae"
+  },
+  "fpga/snapshot/src/hdmi/fft/visual_twiddle_rom.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/fft/visual_twiddle_rom.v",
+    "sha256": "4a7c5bf45ba76f6e9b51bfb787bb49f9e1d6f1899ab73b938556543d175ec9be"
+  },
+  "fpga/snapshot/src/hdmi/hdmi_board_probe.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/hdmi_board_probe.v",
+    "sha256": "65f027c1e5ad5bb44527480a47eac2927cdf914ec5597ccb169ca0b7d1edb76a"
+  },
+  "fpga/snapshot/src/hdmi/hdmi_pcm.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/hdmi_pcm.v",
+    "sha256": "d7cd6df21cb8a58812008f2cc39627880a45831ed77177dbcdd6310ea72f3ef5"
+  },
+  "fpga/snapshot/src/hdmi/hdmi_scope.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/hdmi_scope.v",
+    "sha256": "111195f6c922c957a1c7d1d203da62eaa50e794fc2e0aca8113725245b70a35b"
+  },
+  "fpga/snapshot/src/hdmi/hdmi_spectrum.sv": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/hdmi_spectrum.sv",
+    "sha256": "c7090641b719def7d533a039f0f8f86df9c1f0454fc4d86db17fb0ae9bb44b99"
+  },
+  "fpga/snapshot/src/hdmi/hdmi_status_cdc.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/hdmi_status_cdc.v",
+    "sha256": "a7fbb74a268bbca092ac9d95784b6bd1d0fb351e03536a6ec3b6d4740b8176f0"
+  },
+  "fpga/snapshot/src/hdmi/hdmi_video.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/hdmi_video.v",
+    "sha256": "f6e59e279cf07cb7f91eeb7f0a14c41f613735da7af691bb7b3fc731391f2db7"
+  },
+  "fpga/snapshot/src/hdmi/top_hdmi.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/top_hdmi.v",
+    "sha256": "12e0e28fc613f3791e85fe4d0304f3ce56b8b4b46c9f507f3265071441d87738"
+  },
+  "fpga/snapshot/src/hdmi/top_hdmi_check.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/top_hdmi_check.v",
+    "sha256": "7cb6311791663841380826d7f4a0aeaf2ea57df8a8524b1e5874604bbb6e17d5"
+  },
+  "fpga/snapshot/src/hdmi/top_hdmi_probe.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/top_hdmi_probe.v",
+    "sha256": "6dc8975bec984b8871a7d6f3a30b6a2d627df3d0301a724254b93e031cb14191"
+  },
+  "fpga/snapshot/src/hdmi/vendor/DVI_TX_Top.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/vendor/DVI_TX_Top.v",
+    "sha256": "a2dc2f338438864307dc8da6c8f50b582d412eeb5ea899af9f047a8d6b46815f"
+  },
+  "fpga/snapshot/src/hdmi/vendor/SIPEEd-LICENSE.txt": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/vendor/SIPEEd-LICENSE.txt",
+    "sha256": "8934c44d142cef6753acbe993d8755078890cf79c4633e84d957befc280e4180"
+  },
+  "fpga/snapshot/src/hdmi/vendor/TMDS_PLL.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/hdmi/vendor/TMDS_PLL.v",
+    "sha256": "93f75ddfc086df167e245b840d6b07f016d281bc14a2b707a1e1c264ebc2d7bf"
+  },
+  "fpga/snapshot/src/note_table.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/note_table.v",
+    "sha256": "c5502a64a58a449c0a7f1620de3ee82861dbe368b6a2d03a48acf6aec4fe8f99",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/realistic/periodic_interp.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/realistic/periodic_interp.v",
+    "sha256": "74c3106ec498892579e6f0e61935e51ef3afd97aa6f4f944ca25fbaffced82a0"
+  },
+  "fpga/snapshot/src/realistic/realistic_poly.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/realistic/realistic_poly.v",
+    "sha256": "84afe09fce53d53cbee8fa2ecdc4b83965389fca41799735ac9734af0963eef3",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/realistic/realistic_poly_adapter.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/realistic/realistic_poly_adapter.v",
+    "sha256": "1b3d46d9cb3ed688acc6b0819bfb5e8c34f328637cb2be6703519d3af971b085"
+  },
+  "fpga/snapshot/src/realistic/realistic_poly_ram.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/realistic/realistic_poly_ram.v",
+    "sha256": "d74101890bc8085d1fda1c3d00a3b559b5a07664d15da9ab1b8120d6a5f44563"
+  },
+  "fpga/snapshot/src/realistic/realistic_poly_voice.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/realistic/realistic_poly_voice.v",
+    "sha256": "65cd5a787d0deb5848f4b31b09672607c1285d232618c9d8d0b0601a139867a1",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/realistic/realistic_voice_dsp.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/realistic/realistic_voice_dsp.v",
+    "sha256": "cb3116bf9ea3b23acf935ffea21be0a2a7de77c066260810eeb93430c43c2f5a",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/sine_lite.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/sine_lite.v",
+    "sha256": "2bcf085a21dfa5f22c5cc86bf7e1a0c0bf5783f9f6d02555a0ed256f1252de72",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/softsaw_osc.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/softsaw_osc.v",
+    "sha256": "6a0c3c25390ff9fc77c5e6e121705e171a573c05f4faf6f36768fd7134daf8ad",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/stereo_phase.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/stereo_phase.v",
+    "sha256": "e0f2bc4e0af45ee27f0b0dcc7b3b31d03f3f9a6eab48d17c7aad64f86d1fef7c"
+  },
+  "fpga/snapshot/src/synth_engine.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/synth_engine.v",
+    "sha256": "193f61b2204bf3090aee11322d4112ad225ca105f75ae3e19a2eb70be7fe56e4",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/synth_voice.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/synth_voice.v",
+    "sha256": "3ce36618550f653e30805e27ecf2cb1d0c02da60076d6b7aa321e959b9eb40f9",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/timbre_morph.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/timbre_morph.v",
+    "sha256": "5e6177b39d46395072fc38caa76a17179bfe5c09fa375d42924207f0181a6f82",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/top.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/top.v",
+    "sha256": "9cda1e34efb2c59bcf09f762f6cc94274233753b805359cc372d21c6e44b4f2d",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/top_main_u.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/top_main_u.v",
+    "sha256": "2d99b41d569375631ceb47589642047c08342b5f336c22c24526af06aec2b5e4",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/uart_arb.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/uart_arb.v",
+    "sha256": "fbecd3eb6bf24d39c90c70cca5a6244d8460fdfc1e34914227d9d3442000aafc",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/uart_rx.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/uart_rx.v",
+    "sha256": "4cadf86af18d0d283de2cc207e364b2c9a9fa6bfdbbab0c319e7030df27ed63d",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/snapshot/src/uart_tx.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/uart_tx.v",
+    "sha256": "2af6bb3b610b29f804092905407560d22fb87b36b8820b7a6aca119326d7a6e3"
+  },
+  "fpga/snapshot/src/voice_osc.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/voice_osc.v",
+    "sha256": "5b9040c0013daf4860bf657f2db630e46e74adcc44a2df01b996b6079ea49dbe"
+  },
+  "fpga/snapshot/src/wav_rom_new.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/wav_rom_new.v",
+    "sha256": "388ea8c1b1b6c41e461f4fc2d428eea4cf972a72b3ec30cf25f85cb7ca89e5f3"
+  },
+  "fpga/snapshot/src/waveform_set.v": {
+    "source": "firmware/main_Y_HDMI_final/snapshot/src/waveform_set.v",
+    "sha256": "d5f976394648066075f0631491c977383e593d1eb1b6b9737712170376f53507",
+    "transformation": "Comments edited; RTL token sequence preserved"
+  },
+  "fpga/reports/app_tests.log": {
+    "source": "firmware/main_Y_HDMI_final/reports/app_tests.log",
+    "sha256": "9c8d09ecc5bb98f0c94c399e51e09e931936b351f7d2708b0dc1ca93e7859c86"
+  },
+  "fpga/reports/baseline_inputs.json": {
+    "source": "firmware/main_Y_HDMI_final/reports/baseline_inputs.json",
+    "sha256": "454ece8b30929a92c2a561822b59651e36aa93207dbe61ab959d3c6e1c1b1921"
+  },
+  "fpga/reports/build.log": {
+    "source": "firmware/main_Y_HDMI_final/reports/build.log",
+    "sha256": "6da269fcd49c5a74b07f52d77e3a1967f30b603c5e19f49e86c61b12770a074c"
+  },
+  "fpga/reports/build_evidence.json": {
+    "source": "firmware/main_Y_HDMI_final/reports/build_evidence.json",
+    "sha256": "b7c9036bc6175ecde9a9e7a92097f513f8659e2bc2b421379cc5ef5dba6d3aac"
+  },
+  "fpga/reports/device.cfg": {
+    "source": "firmware/main_Y_HDMI_final/reports/device.cfg",
+    "sha256": "c4c6537a7fd51922d6a6bec98d3e75597621e0ec859499aee2aaef2ba8ee6573"
+  },
+  "fpga/reports/main_y_hdmi_cello40.pin.html": {
+    "source": "firmware/main_Y_HDMI_final/reports/main_y_hdmi_cello40.pin.html",
+    "sha256": "501b6e098b1b71186911c4c0166ed524c12e7968fe8bf5adac46fdaee31e0c25"
+  },
+  "fpga/reports/main_y_hdmi_cello40.rpt.txt": {
+    "source": "firmware/main_Y_HDMI_final/reports/main_y_hdmi_cello40.rpt.txt",
+    "sha256": "92ca61cf51df6cca9a21869ec5911d48d8bfc02d065d2d69bdbaced0340815e7"
+  },
+  "fpga/reports/main_y_hdmi_cello40_tr_content.html": {
+    "source": "firmware/main_Y_HDMI_final/reports/main_y_hdmi_cello40_tr_content.html",
+    "sha256": "8f8691301e636dbc9c12127c77cec354cec6cc13963b36f73984bcc17cc6b18d"
+  },
+  "fpga/reports/scores_tests.log": {
+    "source": "firmware/main_Y_HDMI_final/reports/scores_tests.log",
+    "sha256": "383a12fba9b5b327054a24ce7e5739569c4f0b6621facd981f2d6a4271063b3c"
+  },
+  "fpga/reports/tb_cello_attack40_inputs_sha256.json": {
+    "source": "firmware/main_Y_HDMI_final/reports/tb_cello_attack40_inputs_sha256.json",
+    "sha256": "68944142943b66dd1eb604865b141432f0bb51a8f7707ad99257266af02161b3"
+  },
+  "fpga/reports/tb_cello_attack40_result.log": {
+    "source": "firmware/main_Y_HDMI_final/reports/tb_cello_attack40_result.log",
+    "sha256": "69b82e0286ad991451800bf28575f0b031022fe2c0763cc56e17837722070d71"
+  },
+  "fpga/reports/tb_main_y_cello40_inputs_sha256.json": {
+    "source": "firmware/main_Y_HDMI_final/reports/tb_main_y_cello40_inputs_sha256.json",
+    "sha256": "13cbaa27e1709b999adf174286b05b60e48c27b824b62757c859c2e10ef8be04"
+  },
+  "fpga/reports/tb_main_y_cello40_result.log": {
+    "source": "firmware/main_Y_HDMI_final/reports/tb_main_y_cello40_result.log",
+    "sha256": "f4ed45de2597104cdcceac1136a13536c2c3e4f8b1249a137d60c0a0c871a89b"
+  },
+  "fpga/reports/tb_main_y_cello40_runtime_hex_sha256.json": {
+    "source": "firmware/main_Y_HDMI_final/reports/tb_main_y_cello40_runtime_hex_sha256.json",
+    "sha256": "306e42da405fb93ae0f70083f74ea49386c0067b8b3ace82f24d51d49e88c58a"
+  },
+  "fpga/reports/tb_main_y_cello40_stereo_metrics.json": {
+    "source": "firmware/main_Y_HDMI_final/reports/tb_main_y_cello40_stereo_metrics.json",
+    "sha256": "a42f4dbabe1c61ac7d683335d6f3cf71f09f0969f14ed95835f19260975b2734"
+  },
+  "fpga/main_Y_HDMI_final.gprj": {
+    "source": "firmware/main_Y_HDMI_final/main_Y_HDMI_final.gprj",
+    "sha256": "971285d96efe81ae1d49fef08448ed285d5f0a10de59df832b1f84020773a27e"
+  },
+  "fpga/main_Y_HDMI_final.fs": {
+    "source": "firmware/main_Y_HDMI_final/main_Y_HDMI_final.fs",
+    "sha256": "b625522662ab3191c139e15eda1e12db9ecb4ab0aa440d8ce20b008887509663"
+  },
+  "fpga/run_all.tcl": {
+    "source": "firmware/main_Y_HDMI_final/run_all.tcl",
+    "sha256": "50ff67d44f275a4ee313401df4d197243aa3a61eb613c3071c7b4fc203a8e139"
+  },
+  "fpga/manifest.json": {
+    "source": "firmware/main_Y_HDMI_final/manifest.json",
+    "sha256": "23b9c90ebab4a3a125f5a876cf4161fbb4fb350e94084b7f0260b47c2fca6873"
+  },
+  "fpga/fx_delay_zero.hex": {
+    "source": "firmware/main_Y_HDMI_final/fx_delay_zero.hex",
+    "sha256": "29283ec3a52c697d4f75020c48361393a03b6770041cf8ec12b5db706f8f5915"
+  },
+  "fpga/instruments_even.hex": {
+    "source": "firmware/main_Y_HDMI_final/instruments_even.hex",
+    "sha256": "7ea5d5083986724a7e3b16c92aacd48397772e73e639897b3b9ac889dcb8e1a4"
+  },
+  "fpga/instruments_odd.hex": {
+    "source": "firmware/main_Y_HDMI_final/instruments_odd.hex",
+    "sha256": "f75918acbbf1cb42d7203d08ca301cf3656712490afe59354a6e3aa57bc8ee0c"
+  },
+  "pc/diagnose_bluetooth.cmd": {
+    "source": "demo/diagnose_bluetooth.cmd",
+    "sha256": "2be8c81a45390de4daa9f7cad3830562400210730c03d69fdf2a79eeff80cd91"
+  },
+  "pc/materials/卡农/inputs_sha256.json": {
+    "source": "demo/materials/卡农/inputs_sha256.json",
+    "sha256": "6bb78ba73ea93ab17710abf2339a79fad57921998ff9cb9d15123df7d1d168da"
+  },
+  "pc/materials/卡农/result.log": {
+    "source": "demo/materials/卡农/result.log",
+    "sha256": "609d77de3c3039429fac3c74f4743ab7e19be3775405317cdef637da23cf3dfe"
+  },
+  "pc/materials/卡农/verification.json": {
+    "source": "demo/materials/卡农/verification.json",
+    "sha256": "7f0af37e6cc6c366fd15ae27495c5755accd34f46e019b1756f2195729faf3de"
+  },
+  "pc/materials/卡农/卡农_串口加载并播放.txt": {
+    "source": "demo/materials/卡农/卡农_串口加载并播放.txt",
+    "sha256": "0203544d9a2a696725716a41e5026fb16994b5a77c195270700a68db4467ac91"
+  },
+  "pc/materials/卡农/卡农_网页曲谱.json": {
+    "source": "demo/materials/卡农/卡农_网页曲谱.json",
+    "sha256": "9a3a97b1325074b8379dba415c486dcfaf957cfddcc50dad80bd881945f8fe7a"
+  },
+  "pc/materials/卡农/卡农_脱机主旋律.txt": {
+    "source": "demo/materials/卡农/卡农_脱机主旋律.txt",
+    "sha256": "6d40ab497e9db712191f5f3f7201aff5b12414533d29d5918f8ef205d00a7921"
+  },
+  "pc/materials/卡农/格式与脱机说明.md": {
+    "source": "demo/materials/卡农/格式与脱机说明.md",
+    "sha256": "21da4ed5b2f6b1ca66cd88351d9fb261a48d16fcbdd0010ae5dc6917fae3f2f3",
+    "transformation": "Documentation wording edited"
+  },
+  "pc/materials/小星星_脱机主旋律.txt": {
+    "source": "demo/materials/小星星_脱机主旋律.txt",
+    "sha256": "21ff1afb550393938da010835f14d9b0c363b9f9407608592ad47bcf98405364"
+  },
+  "pc/requirements.txt": {
+    "source": "demo/requirements.txt",
+    "sha256": "b69291dfd09878b5b55ad5664572fc3897ce74821565a3441de1f17cc71f79a6"
+  },
+  "pc/start_app.cmd": {
+    "source": "demo/start_app.cmd",
+    "sha256": "0ccd1bd6f9fc7faf1471159da23191498fd5adfcb5b66f841f1fb2a8733bab1a"
+  },
+  "pc/start_bluetooth.cmd": {
+    "source": "demo/start_bluetooth.cmd",
+    "sha256": "3a9f84e3702368e8fbb376b65971c5a3df99a1d93c1261c53f6f3feaa1d532b1"
+  },
+  "pc/stop_app.cmd": {
+    "source": "demo/stop_app.cmd",
+    "sha256": "eb7550c378ea6354751da5c29d75ac8677f6d645a3c43e276bcba32f6f7fa891"
+  },
+  "pc/tools/bluetooth_status.ps1": {
+    "source": "demo/tools/bluetooth_status.ps1",
+    "sha256": "8ca5738e661e3137c162c8d0a5b6d2e2d2285c3fe4ca2f9d0906800d9342b14d"
+  },
+  "pc/tools/bridge.py": {
+    "source": "demo/tools/bridge.py",
+    "sha256": "a9a02c6247001dd166e77e3e1a0ce0684a3b4269d591926e4b1380e7389e0714"
+  },
+  "pc/tools/bt_socket.py": {
+    "source": "demo/tools/bt_socket.py",
+    "sha256": "ae65326b3bc28c7599e65ae5e071feeb21f8a28d732b9a5ca62eaaea156fe9ef"
+  },
+  "pc/tools/bt_spp_connect.ps1": {
+    "source": "demo/tools/bt_spp_connect.ps1",
+    "sha256": "721637ee5085a1d2419925a923002d66d4945be9636a443f39879fbdf4b029dc"
+  },
+  "pc/tools/diagnose_bluetooth.ps1": {
+    "source": "demo/tools/diagnose_bluetooth.ps1",
+    "sha256": "224bde39f08b7e088971a8e6dd4ea653507618fbb7caf23a980fad353baa20c8"
+  },
+  "pc/tools/start_app.ps1": {
+    "source": "demo/tools/start_app.ps1",
+    "sha256": "3c28c992ec2e03dabbf1a70d5e6cdeb1d83b16343679c38930be0e84f86ac5e3"
+  },
+  "pc/tools/stop_app.ps1": {
+    "source": "demo/tools/stop_app.ps1",
+    "sha256": "f1b2e5079761362adee5b3b1ee12735fcf817038b5f070faec0adc4b6ea92753"
+  },
+  "pc/web/app.html": {
+    "source": "demo/web/app.html",
+    "sha256": "54997bc0a9fd5069553a21e6d80e1e66f53dd247daff35874dba90ab65e13aca"
+  },
+  "pc/web/app.webmanifest": {
+    "source": "demo/web/app.webmanifest",
+    "sha256": "c2bedd4ec4d55e4139683946e226f402d3d9d94bab505cec74199822f826c393"
+  },
+  "pc/web/icon-192.png": {
+    "source": "demo/web/icon-192.png",
+    "sha256": "344f0e49f5092ef7d46b9a474c0b3d43870a20e52619cf0bd85234d64ea0293f"
+  },
+  "pc/web/icon-512.png": {
+    "source": "demo/web/icon-512.png",
+    "sha256": "e77ba0d4809f546ea684a53bc98841de3bdaf10c22f4bcf1a67ba28d8111ad5c"
+  },
+  "pc/web/scores/index.json": {
+    "source": "demo/web/scores/index.json",
+    "sha256": "603318321adf055fa502ea96a1ea4713e8a83ad689ce308a4ab5bbb9149f38df"
+  },
+  "pc/web/scores/song00.json": {
+    "source": "demo/web/scores/song00.json",
+    "sha256": "c0ba2fe09995bda3e6f251ca7cd47f69dcc53677ad89bca626f2bf8dc6d180b5"
+  },
+  "pc/web/scores/song01.json": {
+    "source": "demo/web/scores/song01.json",
+    "sha256": "ec9fdbbaced41cd40ef606ea1484970767ff072ccc8e3aa6271a3722042c57dc"
+  },
+  "pc/web/scores/song02.json": {
+    "source": "demo/web/scores/song02.json",
+    "sha256": "9a3a97b1325074b8379dba415c486dcfaf957cfddcc50dad80bd881945f8fe7a"
+  },
+  "pc/web/scores/song03.json": {
+    "source": "demo/web/scores/song03.json",
+    "sha256": "815102a009d8848cc0e90260535b8ad770b27f5b6a8884809286c3022df9a469"
+  },
+  "pc/web/scores/song04.json": {
+    "source": "demo/web/scores/song04.json",
+    "sha256": "a5542f937f94ad02fe7bf39b4def3f4b2eb9eeef8ff954d291e50fa47eafb48c"
+  },
+  "pc/web/scores/song05.json": {
+    "source": "demo/web/scores/song05.json",
+    "sha256": "498c4f228c0e69c0837c4ce56308fd475f26a8cee36c2e63f892e1a991a570fc"
+  },
+  "pc/tools/gen_scores.py": {
+    "source": "tools/gen_scores.py",
+    "sha256": "697352c1a09e232597ff10d2746d36460f6c46570dd8321886e4799c48a84fc4",
+    "transformation": "Documentation wording edited"
+  },
+  "pc/tools/test_scores.py": {
+    "source": "tools/test_scores.py",
+    "sha256": "9e5343c3c673bb9c6db42b94acc20c55d5438d7ffaedb94b9b130f15dbc10590"
+  },
+  "pc/tools/test_app.cjs": {
+    "source": "tools/test_app.cjs",
+    "sha256": "1a44ff653897a3cf0c20094ae8e0ceaf665420b2cce4ba35bfc2581013574026"
+  },
+  "pc/tools/test_bridge.py": {
+    "source": "tools/test_bridge.py",
+    "sha256": "cc09b2f0a1db3fc449817aa6761d52c2c0237e4c343a2294670d3d557153438d"
+  },
+  "pc/tools/test_bt_socket.py": {
+    "source": "tools/test_bt_socket.py",
+    "sha256": "aefe1d5355ac62cdee8fda5536dc1ed41bed0a87affb896a44f7934aad6b81c6"
+  },
+  "verification/sim/tb_cello_attack40.v": {
+    "source": "sim/tb_cello_attack40.v",
+    "sha256": "2dae06305e3f97b2abb835e36d62a08584db59cd459d4093a4b0b7cdc4963734"
+  },
+  "verification/sim/tb_main_y_hdmi.v": {
+    "source": "sim/tb_main_y_hdmi.v",
+    "sha256": "e703771ae36e628f0cadb718248ee820aeb4fb020cad148181015c20c1f4ab41"
+  },
+  "verification/sim/tb_main_y_cello40.v": {
+    "source": "build/timbre_checks/tb_main_y_cello40/tb_main_y_cello40.v",
+    "sha256": "0977a8f8d683dc2015dcc17ee35b6f5569e31069b875979a36a78066edb9aed9"
+  },
+  "verification/sim/tb_canon_offline.v": {
+    "source": "build/timbre_checks/tb_canon_offline/tb_canon_offline.v",
+    "sha256": "139b9ebf0a3c0f4095af41ce14cc097fddc6abe4b6c250e5d4015b3cfda066f4"
+  },
+  "verification/canon/canon_upload.txt": {
+    "source": "build/timbre_checks/tb_canon_offline/canon_upload.txt",
+    "sha256": "6d40ab497e9db712191f5f3f7201aff5b12414533d29d5918f8ef205d00a7921"
+  },
+  "verification/canon/canon_expected.hex": {
+    "source": "build/timbre_checks/tb_canon_offline/canon_expected.hex",
+    "sha256": "c73515adb68a7e5ea8e59fd35b742a54f17b23e47400fc9fce147e16ac73847f"
+  },
+  "verification/canon/result.log": {
+    "source": "build/timbre_checks/tb_canon_offline/result.log",
+    "sha256": "609d77de3c3039429fac3c74f4743ab7e19be3775405317cdef637da23cf3dfe"
+  },
+  "verification/canon/inputs_sha256.json": {
+    "source": "build/timbre_checks/tb_canon_offline/inputs_sha256.json",
+    "sha256": "6bb78ba73ea93ab17710abf2339a79fad57921998ff9cb9d15123df7d1d168da"
+  },
+  "verification/baseline_dsp.v": {
+    "source": "firmware/main_Y_HDMI_v2/snapshot/src/realistic/realistic_voice_dsp.v",
+    "sha256": "2935dfe995a01714fe5797f2a9c9798ded891a8c5895af593b2e18a3eb696756",
+    "transformation": "Rename the baseline module to realistic_voice_dsp_baseline for A/B regression; comments edited"
+  },
+  "docs/mega60k_dock_sch.pdf": {
+    "source": "docs/hardware/mega60k_dock_sch.pdf",
+    "sha256": "5ca6049ed80bab57bcaa87cc5e58926f569f2ca2aa11b984d52da1782633f976"
+  },
+  "docs/interface/usb_block.png": {
+    "source": "build/submission_pin_audit/usb_block.png",
+    "sha256": "db511832260523d1f251df9a6a3e097da0afd377ae5369f3ac3f41d34079a2ca"
+  },
+  "docs/interface/usb_typec.png": {
+    "source": "build/submission_pin_audit/usb_typec.png",
+    "sha256": "9a7bdd16bc3d6ed91a8fdb0539eda285bdf5f41d0a9e1bf68ad6a94bf665f701"
+  },
+  "docs/interface/ch569.png": {
+    "source": "build/submission_pin_audit/ch569.png",
+    "sha256": "e997bc56d80b54e9bc58adcd7f86e742f3adbde494a8309bda0508a0b9171c27"
+  }
+}

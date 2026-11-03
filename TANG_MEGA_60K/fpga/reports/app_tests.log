@@ -1,0 +1,5 @@
+PASS default/saved keyboard, reconnect, interrupted key release, stale callbacks, heartbeat, manual stop, note delivery
+PASS duet timbres/overlap/duration/stop/panic/disconnect, legacy scores, USB framing, offline melody
+PASS instrument-specific recovery, manual key-up ownership, unison stop, duet recording and old recording compatibility
+PASS exported MIDI payload, per-instrument channels/programs and independent unison note-offs
+PASS actual six-score library: simultaneous Little Star duet, five explicit solo scores, all notes released

@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "bench": "tb_cello_attack40",
+  "defines": [],
+  "source_sha256": {
+    "build/main_y_hdmi_cello40/snapshot/src/realistic/realistic_voice_dsp.v": "cb3116bf9ea3b23acf935ffea21be0a2a7de77c066260810eeb93430c43c2f5a",
+    "build/main_y_hdmi_cello40/baseline_dsp.v": "817e06e8c56dc3aa855f502e2f600fd798a0449a6a97a6c5b67c2186508b436a",
+    "sim/tb_cello_attack40.v": "2dae06305e3f97b2abb835e36d62a08584db59cd459d4093a4b0b7cdc4963734"
+  },
+  "log_sha256": "69b82e0286ad991451800bf28575f0b031022fe2c0763cc56e17837722070d71"
+}

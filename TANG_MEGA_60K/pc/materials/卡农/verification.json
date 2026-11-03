@@ -1,0 +1,11 @@
+{
+  "score_sha256": "9a3a97b1325074b8379dba415c486dcfaf957cfddcc50dad80bd881945f8fe7a",
+  "notes": 41,
+  "beats": 48.0,
+  "tempo": 72,
+  "rtl_source_sha256": "d774c0af19deb41d731cd711fbd3f8f135875cd76ea4216f5b14fd0f1e3bdbd7",
+  "accelerated_tick_hz": 993,
+  "production_tick_hz": 99300,
+  "whole_song_played_with_uart_idle": true,
+  "hardware_verified": false
+}

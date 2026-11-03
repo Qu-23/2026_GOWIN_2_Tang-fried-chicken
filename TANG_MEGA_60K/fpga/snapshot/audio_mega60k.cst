@@ -1,0 +1,72 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Physical Constraints file
+//Device: GW5AT-60 (Tang Mega 60K) GW5AT-LV60PG484AC1/I0
+//Device Version: B
+//Note: 由 Sipeed 官方 tang_mega_60K_pins.cst 提取, 按键为板载 KEY(内部上拉,按下为低)
+//注意: IDE-Project-Configuration-Place&Route-Dual Purpose Pin 需将 CPU 设为 regular IO
+//4 个 LED (官方 LEDs[0..3] = 普通 IO)
+//  ★ LEDs[4..7] (U21/T21/R19/P19) 是双功能 CPU 专用脚,
+//    除非在 Place&Route -> Dual Purpose Pin 里把 CPU 改成 regular IO, 否则不能用。
+IO_LOC "LEDs[0]" T18;
+IO_PORT "LEDs[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "LEDs[1]" R18;
+IO_PORT "LEDs[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "LEDs[2]" R17;
+IO_PORT "LEDs[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "LEDs[3]" P16;
+IO_PORT "LEDs[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "PA_EN" AB16;
+IO_PORT "PA_EN" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "HP_DIN" AA16;
+IO_PORT "HP_DIN" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "HP_WS" AB17;
+IO_PORT "HP_WS" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "HP_BCK" Y17;
+IO_PORT "HP_BCK" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+//按键 (依据 Sipeed 官方 pmod_led demo, 同款 Dock 板):
+//  key0 = AA13, key1 = AB13, key2 = Y12;  板上无上拉, 必须内部上拉
+IO_LOC "key0" AA13;
+IO_PORT "key0" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_LOC "key1" AB13;
+IO_PORT "key1" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_LOC "key2" Y12;
+IO_PORT "key2" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+
+//板载 WS2812 RGB 灯 (原理图 P9: WS2812B-2020) —— 唯一能直接看到的用户灯
+IO_LOC "WS2812" J16;
+IO_PORT "WS2812" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+//===============================================================
+// v9 新增: UART RX (网页弹琴)
+//   依据: Sipeed 官方 Tang Mega 60K 全引脚约束文件 (NEO_DOCK 模板)
+//     //====== UART ======
+//     IO_LOC  "txp"  U15;                                    // FPGA TX
+//     //For version 31002
+//     //IO_LOC  "rxp"  Y14;  ... LVCMOS15 ... BANK_VCCIO=1.5;
+//     //For version 31004 or later
+//     //IO_LOC  "rxp"  V14;  ... BANK_VCCIO=3.3;
+//   → 本板按 31004+ 取 V14 作为 UART RX
+//   (之前误用 C17 = SDRAM 地址线, 导致串口数据进不来)
+//
+//   ⚠ 若仍收不到: 说明本板是 31002 版本, 把下面 V14 改成 Y14 再试。
+//   BL616 调试器的 UART 与 FPGA 直连, 空闲为高。
+//===============================================================
+IO_LOC "uart_rx" V14;
+IO_PORT "uart_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+//===============================================================
+// 2026-10-23 蓝牙串口 RX (BT_ON=1 时使用: main_H / main_J)
+//   PMOD1 排针 IO1 = Y22, 3.3V bank。
+//   模块 TX -> 此脚; 未接模块时内部上拉保持 UART 空闲高电平。
+//   ★ PMOD1 的 IO6=AA19(RDWR_B) / IO7=AB20(CSO_B) 是配置专用双功能脚,
+//     占用后可能无法启动, 所以蓝牙只用 IO0~IO5。
+//   ★★ 漏写这条约束时综合器会把 uart_bt 丢到 P6 这种随机脚上
+//      (实测 m32_fx 首版就是 P6), 蓝牙永远收不到数据。
+//===============================================================
+IO_LOC "uart_bt" B15;
+IO_PORT "uart_bt" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+// 2026-11-01: 蓝牙 RXD 的驱动脚。R18/P16 原来是 LEDs[1]/LEDs[3] 的网络,
+// 现在把这两颗灯挪到 AA20/Y22, 让串口直接用排针上现成的两根线。
+IO_LOC "uart_bt_tx" B16;
+IO_PORT "uart_bt_tx" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
