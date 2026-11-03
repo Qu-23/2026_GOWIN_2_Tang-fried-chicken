@@ -1,0 +1,24 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5A-25A" pn="GW5A-LV25UG324ES">gw5a25a-006</Device>
+    <FileList>
+        <File path="src/disp_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/disp_parameter_cfg.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/tft_panel_uart_top.v" type="file.verilog" enable="1"/>
+        <File path="src/touch_xpt2046.v" type="file.verilog" enable="1"/>
+        <File path="src/touch_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/touch_panel.v" type="file.verilog" enable="1"/>
+        <File path="src/frame_pack.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/ui_render.v" type="file.verilog" enable="1"/>
+        <File path="src/font8x8.v" type="file.verilog" enable="1"/>
+        <File path="src/keypad_scan.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master.v" type="file.verilog" enable="1"/>
+        <File path="src/apds9960_gest.v" type="file.verilog" enable="1"/>
+        <File path="src/tft_panel_uart.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

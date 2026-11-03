@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>ACG525 触屏 GUI 规格 · 480×272 (1:1)</title>
+<style>
+  :root{
+    --bg:#eef1f6; --line:#c9d0dc; --txt:#1a2332; --dim:#68748c;
+    --blue:#2f7fd1; --blueL:#dceafd; --green:#2e9e5b; --greenL:#def0e4;
+    --orange:#e08a2e; --orangeL:#fdeed8; --purple:#7a5cc6; --purpleL:#ece5fa;
+    --teal:#199a94; --tealL:#d9f1ef; --red:#d64545; --redL:#fbe3e3;
+    --grayL:#e2e6ee; --sel:#1a2332;
+  }
+  *{box-sizing:border-box; user-select:none}
+  body{margin:0; background:#dfe4ec; color:var(--txt);
+       font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+       display:flex; flex-direction:column; align-items:center; padding:20px 12px 40px}
+  h1{font-size:17px; margin:0 0 2px}
+  .sub{font-size:12px; color:var(--dim); margin-bottom:14px}
+  /* 480x272 画布, 1.6x 缩放显示 */
+  #wrap{width:768px; height:435px; transform-origin:top left; margin-bottom:24px}
+  #screen{width:480px; height:272px; transform:scale(1.6); transform-origin:top left;
+          background:#f4f6fa; position:relative; overflow:hidden;
+          font-family:Consolas,monospace}
+  .bar{position:absolute; left:0; width:480px; height:24px; background:#223047; color:#fff;
+       display:flex; align-items:center; font-size:11px}
+  .bar .seg{padding:0 10px; border-right:1px solid #35455f; height:100%;
+            display:flex; align-items:center; gap:6px}
+  .bar .seg b{color:#7fc2ff}
+  .led{width:8px; height:8px; background:#4caf50; border-radius:50%}
+  .led.tx{background:#555}
+  .led.tx.on{background:#ffd54a}
+  .cell{position:absolute; border:1px solid var(--line); background:#fff; color:var(--txt);
+        display:flex; flex-direction:column; align-items:center; justify-content:center;
+        cursor:pointer; transition:background .06s}
+  .cell:hover{filter:brightness(.96)}
+  .cell .t{font-size:15px; font-weight:700}
+  .cell .s{font-size:9px; color:var(--dim); margin-top:2px}
+  .cell.on{color:#fff !important; border-color:transparent}
+  .cell.on .s{color:rgba(255,255,255,.75) !important}
+  .cell.ep{background:var(--blueL); border-color:var(--blue); color:var(--blue)}
+  .cell.ep.on{background:var(--blue)}
+  .cell.pl{background:var(--tealL); border-color:var(--teal); color:var(--teal)}
+  .cell.pl.on{background:var(--teal)}
+  .cell.ba{background:var(--orangeL); border-color:var(--orange); color:var(--orange)}
+  .cell.ba.on{background:var(--orange)}
+  .cell.ce{background:var(--purpleL); border-color:var(--purple); color:var(--purple)}
+  .cell.ce.on{background:var(--purple)}
+  .cell.vib{background:var(--greenL); border-color:var(--green); color:var(--green)}
+  .cell.vib.on{background:var(--green)}
+  .cell.gli{background:var(--purpleL); border-color:var(--purple); color:var(--purple)}
+  .cell.gli.on{background:var(--purple)}
+  .cell.var{background:var(--orangeL); border-color:var(--orange); color:var(--orange)}
+  .cell.var.on{background:var(--orange)}
+  .cell.fx{background:var(--tealL); border-color:var(--teal); color:var(--teal)}
+  .cell.fx.on{background:var(--teal)}
+  .cell.chd{background:var(--blueL); border-color:var(--blue); color:var(--blue)}
+  .cell.chd.on{background:var(--blue)}
+  .cell.tst{background:var(--grayL); border-color:#8b93a7; color:var(--txt)}
+  .cell.tst.on{background:var(--orange); color:#fff}
+  .cell.cl{background:var(--redL); border-color:var(--red); color:var(--red)}
+  .cell.cl.on{background:var(--red); color:#fff}
+  .cell.oct{background:var(--grayL); border-color:#8b93a7; color:var(--txt)}
+  table.spec{border-collapse:collapse; font-size:11.5px; margin-top:4px; background:#fff}
+  table.spec th,table.spec td{border:1px solid var(--line); padding:4px 9px; text-align:left}
+  table.spec th{background:#f0f3f8}
+  .legend{font-size:12px; color:var(--dim); margin:6px 0 18px; max-width:768px; line-height:1.8}
+  .legend b{color:var(--txt)}
+</style>
+</head>
+<body>
+<h1>ACG525 触屏控制面板 · 480×272 · 1:1 规格</h1>
+<div class="sub">物理琴键负责演奏, 触摸屏负责其余全部交互 · 8 列 × 60px 网格, 触摸目标 ≥60×48 · Verilog 网格命中比原钢琴键判定更简单</div>
+
+<div id="screen">
+  <!-- 顶栏 -->
+  <div class="bar" style="top:0">
+    <div class="seg" style="width:150px">TONE <b id="barTone">EP-A</b></div>
+    <div class="seg" style="width:120px">L=<b id="barLux">1A2B</b></div>
+    <div class="seg" style="width:100px">E:<b id="barErr">0</b></div>
+    <div class="seg" style="width:60px"><span class="led tx on" id="barTx"></span></div>
+    <div class="seg" style="flex:1; justify-content:flex-end; padding-right:10px" id="barTst">PLAY</div>
+  </div>
+
+  <!-- 音色行 y24 h88: 4 格 × 120 -->
+  <div class="cell ep on" data-g="tone" data-v="0" style="left:0;    top:24px; width:120px; height:88px"><div class="t">EP</div><div class="s">电钢</div></div>
+  <div class="cell pl"    data-g="tone" data-v="1" style="left:120px; top:24px; width:120px; height:88px"><div class="t">PL</div><div class="s">拨弦</div></div>
+  <div class="cell ba"    data-g="tone" data-v="2" style="left:240px; top:24px; width:120px; height:88px"><div class="t">BA</div><div class="s">贝斯</div></div>
+  <div class="cell ce"    data-g="tone" data-v="3" style="left:360px; top:24px; width:120px; height:88px"><div class="t">CE</div><div class="s">大提琴</div></div>
+
+  <!-- 颤音+滑音行 y112 h56: 8 格 × 60 -->
+  <div class="cell vib"    data-g="vib" data-v="0" style="left:0;    top:112px; width:60px; height:56px"><div class="t">V0</div><div class="s">颤音关</div></div>
+  <div class="cell vib"    data-g="vib" data-v="1" style="left:60px;  top:112px; width:60px; height:56px"><div class="t">V1</div><div class="s">浅</div></div>
+  <div class="cell vib"    data-g="vib" data-v="2" style="left:120px; top:112px; width:60px; height:56px"><div class="t">V2</div><div class="s">中</div></div>
+  <div class="cell vib"    data-g="vib" data-v="3" style="left:180px; top:112px; width:60px; height:56px"><div class="t">V3</div><div class="s">深</div></div>
+  <div class="cell gli"    data-g="gli" data-v="0" style="left:240px; top:112px; width:60px; height:56px"><div class="t">G0</div><div class="s">滑音关</div></div>
+  <div class="cell gli"    data-g="gli" data-v="1" style="left:300px; top:112px; width:60px; height:56px"><div class="t">G1</div><div class="s">快</div></div>
+  <div class="cell gli"    data-g="gli" data-v="2" style="left:360px; top:112px; width:60px; height:56px"><div class="t">G2</div><div class="s">中</div></div>
+  <div class="cell gli"    data-g="gli" data-v="3" style="left:420px; top:112px; width:60px; height:56px"><div class="t">G3</div><div class="s">慢</div></div>
+
+  <!-- 变体+效果器行 y168 h56: 8 格 × 60 -->
+  <div class="cell var"    data-g="var" data-v="0" style="left:0;    top:168px; width:60px; height:56px"><div class="t">A</div><div class="s">候选</div></div>
+  <div class="cell var"    data-g="var" data-v="1" style="left:60px;  top:168px; width:60px; height:56px"><div class="t">B</div><div class="s">候选</div></div>
+  <div class="cell var"    data-g="var" data-v="2" style="left:120px; top:168px; width:60px; height:56px"><div class="t">C</div><div class="s">候选</div></div>
+  <div class="cell fx" id="fxCell"  data-v="0" style="left:180px; top:168px; width:60px; height:56px"><div class="t" id="fxT">FX</div><div class="s" id="fxS">关</div></div>
+  <div class="cell fx" id="rsCell"  data-v="0" style="left:240px; top:168px; width:60px; height:56px"><div class="t" id="rsT">R0</div><div class="s">混响</div></div>
+  <div class="cell fx" id="mxCell"  data-v="3" style="left:300px; top:168px; width:60px; height:56px"><div class="t" id="mxT">M3</div><div class="s">干湿</div></div>
+  <div class="cell oct" style="left:360px; top:168px; width:60px; height:56px"><div class="t">O-</div><div class="s">降八度</div></div>
+  <div class="cell oct" style="left:420px; top:168px; width:60px; height:56px"><div class="t">O+</div><div class="s">升八度</div></div>
+
+  <!-- 底行 y224 h48: TS / 和弦×3 / 灯 / CL(双宽红) -->
+  <div class="cell tst" id="tsCell" style="left:0;    top:224px; width:60px; height:48px"><div class="t">TS</div><div class="s">测试</div></div>
+  <div class="cell chd" id="cmCell" style="left:60px; top:224px; width:60px; height:48px"><div class="t">CM</div><div class="s">C大三</div></div>
+  <div class="cell chd" id="gmCell" style="left:120px; top:224px; width:60px; height:48px"><div class="t">GM</div><div class="s">G大三</div></div>
+  <div class="cell chd" id="fmCell" style="left:180px; top:224px; width:60px; height:48px"><div class="t">FM</div><div class="s">F大三</div></div>
+  <div class="cell oct" style="left:240px; top:224px; width:120px; height:48px"><div class="t">LAMP</div><div class="s">键灯照明</div></div>
+  <div class="cell cl"  id="clCell" style="left:360px; top:224px; width:120px; height:48px"><div class="t">CL</div><div class="s">全停</div></div>
+</div>
+
+<div class="legend">
+  <b>状态交互</b>: 单选组(音色/颤音/滑音/变体)点击即选中并高亮; 循环组(FX/R0/M3)点击切换数值;
+  TS 切换测试模式(橙色); 和弦按住发 3 个 note_on、松开发 note_off; CL 全停;
+  O-/O+ 对发送音符做 ±12 半音移调(钳位 C4..C6); LAMP 控制琴键底部照明 LED。
+  <b>顶栏</b>: TONE 当前音色+变体 / L=光强十六进制(光电感应维度) / E=I2C 诊断位 / TX 灯 / PLAY|TEST。
+</div>
+
+<table class="spec">
+  <tr><th>区域</th><th>坐标 (x,y,w,h)</th><th>标签</th><th>动作 → 协议帧</th></tr>
+  <tr><td>音色 ×4</td><td>(0/120/240/360, 24, 120, 88)</td><td>EP PL BA CE</td><td>本地锁存 cfg_wave=cmd[1:0], 下次 note_on 生效</td></tr>
+  <tr><td>颤音 ×4</td><td>(0..180, 112, 60, 56)</td><td>V0..V3</td><td>本地锁存 cfg_vib=cmd[5:4], 逐音符生效</td></tr>
+  <tr><td>滑音 ×4</td><td>(240..420, 112, 60, 56)</td><td>G0..G3</td><td>表情帧 cmd=0x40, note=0x80|gli&lt;&lt;2|vib</td></tr>
+  <tr><td>变体 ×3</td><td>(0..120, 168, 60, 56)</td><td>A B C</td><td>本地锁存 cfg_ep=cmd[3:2]</td></tr>
+  <tr><td>效果器</td><td>(180, 168, 60, 56) 循环 0-3</td><td>FX OFF/REV/DLY/CHO</td><td>效果器帧 cmd=0x40, note=sel|mix&lt;&lt;2|rev&lt;&lt;4</td></tr>
+  <tr><td>混响/干湿</td><td>(240/300, 168, 60, 56) 循环</td><td>R0-R2 / M0-M3</td><td>同上, rev/mix 位段</td></tr>
+  <tr><td>八度 ×2</td><td>(360/420, 168, 60, 56)</td><td>O- O+</td><td>发送前 note±12, 钳位 60..84</td></tr>
+  <tr><td>测试模式</td><td>(0, 224, 60, 48) toggle</td><td>TS</td><td>控制帧 cmd=0x40, note=0x40|tst</td></tr>
+  <tr><td>和弦 ×3</td><td>(60/120/180, 224, 60, 48)</td><td>CM GM FM</td><td>按下: C4+E4+G4 等 3×note_on(FIFO 顺序发); 松开: 3×note_off</td></tr>
+  <tr><td>照明</td><td>(240, 224, 120, 48) toggle</td><td>LAMP</td><td>本地 GPIO → 琴键底部照明 LED (光电琴键的光源)</td></tr>
+  <tr><td>全停</td><td>(360, 224, 120, 48)</td><td>CL</td><td>对当前活跃音发 note_off</td></tr>
+</table>
+
+<script>
+const state = {tone:0, vib:0, gli:0, var:0};
+const TONES = ['EP','PL','BA','CE'], VARS = ['A','B','C'];
+const FXN = ['OFF','REV','DLY','CHO'], RSZ = ['R0','R1','R2'], MIX = ['M0','M1','M2','M3'];
+let fx=0, rs=0, mx=3, tst=false;
+document.querySelectorAll('.cell[data-g]').forEach(c=>{
+  c.addEventListener('click',()=>{
+    const g=c.dataset.g, v=+c.dataset.v;
+    state[g]=v;
+    document.querySelectorAll(`.cell[data-g="${g}"]`).forEach(x=>x.classList.toggle('on', x===c));
+    document.getElementById('barTone').textContent = TONES[state.tone]+'-'+VARS[state.var];
+  });
+});
+const fxCell=document.getElementById('fxCell');
+fxCell.addEventListener('click',()=>{
+  fx=(fx+1)%4;
+  fxCell.querySelector('.t').textContent = fx? FXN[fx].slice(0,3) : 'FX';
+  fxCell.querySelector('.s').textContent = FXN[fx]==='OFF'?'关':FXN[fx];
+  fxCell.classList.toggle('on', fx!==0);
+});
+const rsCell=document.getElementById('rsCell');
+rsCell.addEventListener('click',()=>{
+  rs=(rs+1)%3;
+  document.getElementById('rsT').textContent = 'R'+rs;
+});
+const mxCell=document.getElementById('mxCell');
+mxCell.addEventListener('click',()=>{
+  mx=(mx+1)%4;
+  document.getElementById('mxT').textContent = 'M'+mx;
+});
+const tsCell=document.getElementById('tsCell');
+tsCell.addEventListener('click',()=>{
+  tst=!tst; tsCell.classList.toggle('on', tst);
+  document.getElementById('barTst').textContent = tst?'TEST':'PLAY';
+});
+['cmCell','gmCell','fmCell'].forEach(id=>{
+  const c=document.getElementById(id);
+  c.addEventListener('pointerdown',()=>c.classList.add('on'));
+  c.addEventListener('pointerup',()=>c.classList.remove('on'));
+  c.addEventListener('pointerleave',()=>c.classList.remove('on'));
+});
+const clCell=document.getElementById('clCell');
+clCell.addEventListener('click',()=>{ clCell.classList.add('on'); setTimeout(()=>clCell.classList.remove('on'),150); });
+document.querySelectorAll('.cell.oct').forEach(c=>c.addEventListener('click',()=>{c.classList.add('on'); setTimeout(()=>c.classList.remove('on'),150);}));
+</script>
+</body>
+</html>

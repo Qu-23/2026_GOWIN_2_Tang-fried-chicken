@@ -1,0 +1,128 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.9 Beta-3
+//Part Number: GW5A-LV25UG324ES
+//Device: GW5A-25
+//Device Version: A
+//Created Time: Wed 09 13 17:37:24 2023
+//
+//  ACG525 4.3寸(480x272) 触摸演奏前端 + 串口到 Mega 60K
+//  引脚依据：
+//    · TFT  : 原 ch25_tft_ctrl 例程（厂商已验证）
+//    · 触摸 : 屏幕原理图 P1 1~6 脚 -> 底板 LCD_GPIO0..5（推导见 README）
+//    · 串口 : 底板引脚表 uart_tx = V8
+
+//=============================================================================
+// 一、TFT 显示引脚
+//=============================================================================
+IO_LOC "TFT_pwm" U17;
+IO_PORT "TFT_pwm" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_de" U18;
+IO_PORT "TFT_de" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_clk" M14;
+IO_PORT "TFT_clk" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_vs" T17;
+IO_PORT "TFT_vs" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_hs" T18;
+IO_PORT "TFT_hs" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[15]" H12;
+IO_PORT "TFT_rgb[15]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[14]" G13;
+IO_PORT "TFT_rgb[14]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[13]" F15;
+IO_PORT "TFT_rgb[13]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[12]" F16;
+IO_PORT "TFT_rgb[12]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[11]" E18;
+IO_PORT "TFT_rgb[11]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[10]" L15;
+IO_PORT "TFT_rgb[10]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[9]" L16;
+IO_PORT "TFT_rgb[9]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[8]" L14;
+IO_PORT "TFT_rgb[8]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[7]" M13;
+IO_PORT "TFT_rgb[7]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[6]" J16;
+IO_PORT "TFT_rgb[6]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[5]" H15;
+IO_PORT "TFT_rgb[5]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[4]" N14;
+IO_PORT "TFT_rgb[4]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[3]" N15;
+IO_PORT "TFT_rgb[3]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[2]" N16;
+IO_PORT "TFT_rgb[2]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[1]" M16;
+IO_PORT "TFT_rgb[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "TFT_rgb[0]" M18;
+IO_PORT "TFT_rgb[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "reset_n" B16;
+IO_PORT "reset_n" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "clk50M" T9;
+IO_PORT "clk50M" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+
+//=============================================================================
+// 二、触摸屏（屏幕板载 U2 = XPT2046）
+//     屏幕P1-2 TP_PEN->GPIO0 T11 / P1-4 TP_MISO->GPIO2 V15 / P1-3 TP_SCK->GPIO3 U15
+//     P1-6 TP_CS->GPIO4 V16 / P1-5 TP_MOSI->GPIO5 U16
+//=============================================================================
+IO_LOC "T_CS"   V16;
+IO_PORT "T_CS"  PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "T_CLK"  U15;
+IO_PORT "T_CLK" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "T_DIN"  U16;
+IO_PORT "T_DIN" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "T_DOUT" V15;
+IO_PORT "T_DOUT" PULL_MODE=UP DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "T_IRQ"  T11;
+IO_PORT "T_IRQ" PULL_MODE=UP DRIVE=OFF BANK_VCCIO=3.3;
+
+//=============================================================================
+// 三、串口发送 -> Mega 60K 的 UART RX
+//     接线：ACG525 的 UART TX (V8) -- 杜邦线 --> Mega 60K 的 RX，务必共地(GND)
+//     参数：115200 8N1
+//=============================================================================
+IO_LOC "UART_TX" V8;
+IO_PORT "UART_TX" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+//=============================================================================
+// 四、APDS-9960 手势模块 (v10, I2C @ C17/C18, 40pin 扩展口)
+//     接线: VCC=3.3V / GND / SCL=C17 / SDA=C18 / INT 不接 (轮询模式)
+//     模块板载 "I2C pullup enable" (4.7k 到 VCC) 必须使能
+//=============================================================================
+IO_LOC "APDS_SCL" C17;
+IO_PORT "APDS_SCL" PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "APDS_SDA" C18;
+IO_PORT "APDS_SDA" PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//=============================================================================
+// 五、12 键 CdS 矩阵琴键 (4 行 one-hot Hi-Z x 3 列数字输入, 共 7 IO)
+//     v10 重排: C17/C18 让给手势 I2C, 琴键全部右移
+//     电路: 行(3.3V one-hot, 未选 Hi-Z) -> CdS -> 列节点 -> 47k 下拉 -> GND
+//       琴键松开(照明亮阻 2~10k) => 列压 2.4~3.1V => col=1
+//       琴键按下(挡光/暗阻 1M+)  => 列压 ~0.15V  => col=0
+//     键号 k = row*3 + col (0..11), 音符 = C4(60) + k
+//=============================================================================
+IO_LOC  "KEYPAD_ROW[0]" D17;
+IO_LOC  "KEYPAD_ROW[1]" D18;
+IO_LOC  "KEYPAD_ROW[2]" E16;
+IO_LOC  "KEYPAD_ROW[3]" F14;
+IO_PORT "KEYPAD_ROW[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "KEYPAD_ROW[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "KEYPAD_ROW[2]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "KEYPAD_ROW[3]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC  "KEYPAD_COL[0]" F17;
+IO_LOC  "KEYPAD_COL[1]" G14;
+IO_LOC  "KEYPAD_COL[2]" G16;
+IO_PORT "KEYPAD_COL[0]" PULL_MODE=DOWN BANK_VCCIO=3.3;
+IO_PORT "KEYPAD_COL[1]" PULL_MODE=DOWN BANK_VCCIO=3.3;
+IO_PORT "KEYPAD_COL[2]" PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+//=============================================================================
+// 五、琴键底部照明 LED (LAMP 按钮)
+//     CdS 琴键依赖照明常开 (亮阻足够低 => 松开判 1 可靠)
+//=============================================================================
+IO_LOC "LAMP" C15;
+IO_PORT "LAMP" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;

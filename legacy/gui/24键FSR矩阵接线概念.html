@@ -1,0 +1,81 @@
+<svg viewBox="0 0 680 400" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>24 键 FSR 矩阵接线概念</title>
+  <desc>机械上琴键排成一排没有关系, 矩阵是电气网络: 每个压敏元件一脚接列总线一脚接行总线</desc>
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <text x="40" y="52" font-size="14" font-weight="500" fill="#F1EFE8">机械层: 琴键一排 (C4..B5, 任意排列都行)</text>
+  <rect x="40" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="57" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="74" y="66" width="15" height="40" rx="2" fill="#444441"/>
+  <rect x="91" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="108" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="125" y="66" width="15" height="40" rx="2" fill="#444441"/>
+  <rect x="142" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="159" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="176" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="193" y="66" width="15" height="40" rx="2" fill="#444441"/>
+  <rect x="210" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="227" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="252" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="269" y="66" width="15" height="40" rx="2" fill="#444441"/>
+  <rect x="286" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="303" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="320" y="66" width="15" height="40" rx="2" fill="#444441"/>
+  <rect x="337" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="354" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="371" y="66" width="15" height="40" rx="2" fill="#444441"/>
+  <rect x="388" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="405" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="422" y="66" width="15" height="40" rx="2" fill="#D3D1C7"/>
+  <rect x="439" y="66" width="15" height="40" rx="2" fill="#444441"/>
+  <text x="40" y="126" font-size="12" fill="#B4B2A9">每个键下贴一片 FSR 压敏膜 (两个引脚, 与键的机械位置无关)</text>
+  <text x="40" y="162" font-size="14" font-weight="500" fill="#F1EFE8">电气层: 3 列 × 8 行矩阵 = 24 键, 仅 11 根线</text>
+  <rect x="40" y="180" width="290" height="160" rx="12" fill="#04342C" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text x="70" y="204" font-size="12" fill="#9FE1CB">列A→ADC0</text>
+  <text x="150" y="204" font-size="12" fill="#9FE1CB">列B→ADC1</text>
+  <text x="230" y="204" font-size="12" fill="#9FE1CB">列C→ADC2</text>
+  <line x1="80" y1="212" x2="80" y2="316" stroke="#5DCAA5" stroke-width="1.5"/>
+  <line x1="160" y1="212" x2="160" y2="316" stroke="#5DCAA5" stroke-width="1.5"/>
+  <line x1="240" y1="212" x2="240" y2="316" stroke="#5DCAA5" stroke-width="1.5"/>
+  <line x1="56" y1="226" x2="284" y2="226" stroke="#85B7EB" stroke-width="1"/>
+  <line x1="56" y1="246" x2="284" y2="246" stroke="#85B7EB" stroke-width="1"/>
+  <line x1="56" y1="266" x2="284" y2="266" stroke="#85B7EB" stroke-width="1"/>
+  <line x1="56" y1="286" x2="284" y2="286" stroke="#85B7EB" stroke-width="1"/>
+  <line x1="56" y1="306" x2="284" y2="306" stroke="#85B7EB" stroke-width="1"/>
+  <text x="296" y="230" font-size="11.5" fill="#B5D4F4">R1..R5</text>
+  <text x="296" y="310" font-size="11.5" fill="#B5D4F4">R6..R8</text>
+  <circle cx="80" cy="226" r="4" fill="#E1F5EE"/>
+  <circle cx="160" cy="226" r="4" fill="#E1F5EE"/>
+  <circle cx="240" cy="226" r="4" fill="#E1F5EE"/>
+  <circle cx="80" cy="246" r="4" fill="#E1F5EE"/>
+  <circle cx="160" cy="246" r="4" fill="#E1F5EE"/>
+  <circle cx="240" cy="246" r="4" fill="#E1F5EE"/>
+  <circle cx="80" cy="266" r="4" fill="#E1F5EE"/>
+  <circle cx="160" cy="266" r="4" fill="#E1F5EE"/>
+  <circle cx="240" cy="266" r="4" fill="#E1F5EE"/>
+  <circle cx="80" cy="286" r="4" fill="#E1F5EE"/>
+  <circle cx="160" cy="286" r="4" fill="#E1F5EE"/>
+  <circle cx="240" cy="286" r="4" fill="#E1F5EE"/>
+  <circle cx="80" cy="306" r="4" fill="#E1F5EE"/>
+  <circle cx="160" cy="306" r="4" fill="#E1F5EE"/>
+  <circle cx="240" cy="306" r="4" fill="#E1F5EE"/>
+  <text x="56" y="336" font-size="11.5" fill="#9FE1CB">每个交叉点一颗 FSR (白点, 24 颗)</text>
+  <rect x="352" y="180" width="288" height="160" rx="12" fill="#042C53" stroke="#85B7EB" stroke-width="0.5"/>
+  <text x="368" y="204" font-size="12.5" font-weight="500" fill="#E6F1FB">单键等效电路</text>
+  <line x1="380" y1="220" x2="380" y2="320" stroke="#5DCAA5" stroke-width="2"/>
+  <text x="368" y="336" font-size="11.5" fill="#B5D4F4">列总线 → ADC (0~1V)</text>
+  <line x1="380" y1="256" x2="480" y2="256" stroke="#85B7EB" stroke-width="2"/>
+  <text x="492" y="260" font-size="11.5" fill="#B5D4F4">行总线 (GPIO one-hot)</text>
+  <rect x="404" y="240" width="52" height="32" rx="6" fill="#0C447C" stroke="#85B7EB" stroke-width="0.5"/>
+  <text x="430" y="260" font-size="12" text-anchor="middle" fill="#E6F1FB">FSR</text>
+  <rect x="366" y="288" width="28" height="60" rx="4" fill="#0C447C"/>
+  <text x="380" y="322" font-size="11" text-anchor="middle" fill="#E6F1FB">1kΩ</text>
+  <text x="404" y="296" font-size="11.5" fill="#B5D4F4">下拉到 GND:</text>
+  <text x="404" y="314" font-size="11.5" fill="#B5D4F4">重压2kΩ→0.96V</text>
+  <text x="404" y="332" font-size="11.5" fill="#B5D4F4">轻压20kΩ→0.13V</text>
+  <path d="M380 220 L380 236" fill="none" stroke="#5DCAA5" stroke-width="0"/>
+  <text x="40" y="372" font-size="12" fill="#F1EFE8">扫描: R1..R8 逐行 one-hot(未选行 Hi-Z 防鬼影), 每行并行采 3 列 → 24 点 ≈ 6ms/圈 (~160Hz/键)</text>
+</svg>
