@@ -1,0 +1,12 @@
+{
+  "ep_E4": {
+    "correlation": 0.5989777996266379,
+    "minor_major_energy_ratio": 0.25011699663353704,
+    "peak": 29829.0
+  },
+  "cello_E4": {
+    "correlation": 0.6361877509175552,
+    "minor_major_energy_ratio": 0.1858495291076104,
+    "peak": 17878.0
+  }
+}

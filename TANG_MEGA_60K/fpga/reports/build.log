@@ -1,0 +1,176 @@
+*** GOWIN Tcl Command Line Console  *** 
+alog error: failed to open log file: 'C:/Users/34135/AppData/Local/GowinSemi/IDE/cache/sh.log'
+Open project D:/Gowin/projects/audio_mega60k/build/main_y_hdmi_cello40/main_y_hdmi_cello40.gprj finished
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\audio_drive.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\audio_drive_lsbj.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_report.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_song.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_text.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\exp_env.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\filt_lp.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_allpass.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_delay.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_engine.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\gowin_clkdiv\gowin_clkdiv.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\gowin_osc\gowin_osc.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\gowin_pll\gowin_pll.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_fft.sv'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_frame_store.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_twiddle_rom.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_board_probe.v'
+WARN  (EX2478) : Non-net output port 'rgb' cannot be initialized at declaration in SystemVerilog mode("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_board_probe.v":5)
+WARN  (EX2478) : Non-net output port 'status' cannot be initialized at declaration in SystemVerilog mode("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_board_probe.v":5)
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_pcm.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_scope.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_spectrum.sv'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_status_cdc.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_video.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\top_hdmi.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\top_hdmi_check.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\top_hdmi_probe.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\vendor\DVI_TX_Top.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\vendor\TMDS_PLL.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\note_table.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\periodic_interp.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_adapter.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_ram.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_voice.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_voice_dsp.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\sine_lite.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\softsaw_osc.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\stereo_phase.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\synth_engine.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\synth_voice.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\timbre_morph.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\top.v'
+Undeclared symbol 'cfg_send', assumed default net type 'wire'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\top.v":991)
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\uart_arb.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\uart_rx.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\uart_tx.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\voice_osc.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\wav_rom_new.v'
+Analyzing Verilog file 'D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\waveform_set.v'
+Compiling module 'top_hdmi'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\top_hdmi.v":3)
+Compiling module 'top(N_VOICES=32,KEY_WAVE=0,EP_SEL=0,PLUCK_SEL=1,UNISON=0,FX_ON=1,BT_ON=1,ENGINE_REAL=1,BT_SONG=1)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\top.v":26)
+Compiling module 'Gowin_OSC'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\gowin_osc\gowin_osc.v":7)
+Compiling module 'Gowin_PLL'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\gowin_pll\gowin_pll.v":10)
+Compiling module 'Gowin_CLKDIV'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\gowin_clkdiv\gowin_clkdiv.v":7)
+Compiling module 'uart_rx(CLK_PER_BIT=14)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\uart_rx.v":36)
+Compiling module 'bt_text'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_text.v":23)
+Compiling module 'bt_song'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_song.v":29)
+Extracting RAM for identifier 'mem_note'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_song.v":297)
+Extracting RAM for identifier 'mem_len'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_song.v":298)
+Compiling module 'bt_report'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\bt_report.v":21)
+Compiling module 'uart_tx(CLK_PER_BIT=14)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\uart_tx.v":9)
+Compiling module 'realistic_poly_adapter(N=32,VW=5,USE_RAM=1)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_adapter.v":9)
+Compiling module 'note_table'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\note_table.v":21)
+Compiling module 'realistic_poly_ram'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_ram.v":20)
+Extracting RAM for identifier 'smem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_ram.v":53)
+WARN  (EX3791) : Expression size 368 truncated to fit in target size 360("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_ram.v":253)
+Compiling module 'realistic_voice_dsp'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_voice_dsp.v":37)
+Compiling module 'periodic_interp'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\periodic_interp.v":5)
+Extracting RAM for identifier 'even_rom'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\periodic_interp.v":21)
+Extracting RAM for identifier 'odd_rom'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\periodic_interp.v":22)
+Compiling module 'periodic_interp_lane1'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\realistic\realistic_poly_ram.v":566)
+Compiling module 'fx_engine'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_engine.v":35)
+Compiling module 'fx_comb'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":25)
+Extracting RAM for identifier 'mem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":37)
+Compiling module 'fx_comb(L=1613)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":25)
+Extracting RAM for identifier 'mem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":37)
+Compiling module 'fx_comb(L=1751)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":25)
+Extracting RAM for identifier 'mem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":37)
+Compiling module 'fx_comb(L=1879)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":25)
+Extracting RAM for identifier 'mem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_comb.v":37)
+Compiling module 'fx_allpass'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_allpass.v":18)
+Extracting RAM for identifier 'mx'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_allpass.v":30)
+Extracting RAM for identifier 'my'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_allpass.v":31)
+Compiling module 'fx_allpass(L=341,AW=9)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_allpass.v":18)
+Extracting RAM for identifier 'mx'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_allpass.v":30)
+Extracting RAM for identifier 'my'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_allpass.v":31)
+Compiling module 'fx_delay'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_delay.v":20)
+Extracting RAM for identifier 'mem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_delay.v":34)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\fx_delay.v":70)
+Compiling module 'stereo_phase'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\stereo_phase.v":6)
+Compiling module 'audio_drive_lsbj'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\audio_drive_lsbj.v":41)
+Compiling module 'uart_tx'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\uart_tx.v":9)
+Compiling module 'TMDS_PLL'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\vendor\TMDS_PLL.v":10)
+Compiling module 'hdmi_pcm'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_pcm.v":4)
+Compiling module 'hdmi_scope'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_scope.v":4)
+Extracting RAM for identifier 'lr_ram'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_scope.v":14)
+Extracting RAM for identifier 'delay_ram'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_scope.v":15)
+Extracting RAM for identifier 'waves'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_scope.v":16)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_scope.v":101)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_scope.v":112)
+Compiling module 'hdmi_status_cdc'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_status_cdc.v":3)
+Compiling module 'hdmi_spectrum'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_spectrum.sv":10)
+Extracting RAM for identifier 'bands'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_spectrum.sv":26)
+Compiling module 'visual_fft(LOGN=10)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_fft.sv":5)
+Extracting RAM for identifier 're_mem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_fft.sv":20)
+Extracting RAM for identifier 'im_mem'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_fft.sv":20)
+Compiling module 'visual_frame_store(AW=10)'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_frame_store.v":4)
+Extracting RAM for identifier 'ram'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_frame_store.v":10)
+Compiling module 'visual_twiddle_rom'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_twiddle_rom.v":1)
+Extracting RAM for identifier 'rom'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\fft\visual_twiddle_rom.v":2)
+Compiling module 'hdmi_video'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_video.v":3)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\hdmi_video.v":658)
+Compiling module 'DVI_TX_Top'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\vendor\DVI_TX_Top.v":1089)
+Compiling module '**'("D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\src\hdmi\vendor\DVI_TX_Top.v":1088)
+NOTE  (EX0101) : Current top module is "top_hdmi"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\gwsynthesis\main_y_hdmi_cello40.vg" completed
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_top/osc_inst/osc_inst/OSCOUT.default_clk" and "u_top/pll_52p5_to_6m/PLLA_inst/CLKOUT0.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_top/osc_inst/osc_inst/OSCOUT.default_clk" and "u_top/clk_div4/clkdiv_inst/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_top/pll_52p5_to_6m/PLLA_inst/CLKOUT0.default_gen_clk" and "u_top/osc_inst/osc_inst/OSCOUT.default_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_top/clk_div4/clkdiv_inst/CLKOUT.default_gen_clk" and "u_tmds_pll/PLLA_inst/CLKOUT1.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_tmds_pll/PLLA_inst/CLKOUT1.default_gen_clk" and "u_top/clk_div4/clkdiv_inst/CLKOUT.default_gen_clk"
+[100%] Generate report file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\gwsynthesis\main_y_hdmi_cello40_syn.rpt.html" completed
+GowinSynthesis finish
+Reading netlist file: "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\gwsynthesis\main_y_hdmi_cello40.vg"
+Parsing netlist file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\gwsynthesis\main_y_hdmi_cello40.vg" completed
+Processing netlist completed
+Reading constraint file: "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\snapshot\hdmi.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'i_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\pnr\main_y_hdmi_cello40.power.html" completed
+Generate file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\pnr\main_y_hdmi_cello40.pin.html" completed
+Generate file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\pnr\main_y_hdmi_cello40.rpt.html" completed
+Generate file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\pnr\main_y_hdmi_cello40.rpt.txt" completed
+Generate file "D:\Gowin\projects\audio_mega60k\build\main_y_hdmi_cello40\impl\pnr\main_y_hdmi_cello40.tr.html" completed
+Tue Nov  3 21:41:24 2026
+
