@@ -1,0 +1,50 @@
+[
+ {
+  "file": "song00.json",
+  "name": "小星星",
+  "author": "法国民谣",
+  "notes": 66,
+  "tempo": 96,
+  "arrangement": "电钢＋大提琴合奏"
+ },
+ {
+  "file": "song01.json",
+  "name": "欢乐颂",
+  "author": "贝多芬",
+  "notes": 63,
+  "tempo": 108,
+  "arrangement": "电钢独奏"
+ },
+ {
+  "file": "song02.json",
+  "name": "卡农（片段）",
+  "author": "帕赫贝尔",
+  "notes": 41,
+  "tempo": 72,
+  "arrangement": "大提琴独奏"
+ },
+ {
+  "file": "song03.json",
+  "name": "送别",
+  "author": "李叔同",
+  "notes": 42,
+  "tempo": 66,
+  "arrangement": "大提琴独奏"
+ },
+ {
+  "file": "song04.json",
+  "name": "生日快乐",
+  "author": "希尔姐妹",
+  "notes": 25,
+  "tempo": 120,
+  "arrangement": "电钢独奏"
+ },
+ {
+  "file": "song05.json",
+  "name": "音阶上行",
+  "author": "测试",
+  "notes": 25,
+  "tempo": 120,
+  "arrangement": "电钢独奏"
+ }
+]

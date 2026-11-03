@@ -1,0 +1,4 @@
+# Serial enumeration / USB / virtual COM transport
+pyserial>=3.5,<4
+# Optional for QR PNG generation (includes Pillow)
+qrcode[pil]>=7.4,<9

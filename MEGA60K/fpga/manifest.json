@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-03",
+  "baseline": "firmware/main_Y_HDMI_v2",
+  "fs_sha256": "b625522662ab3191c139e15eda1e12db9ecb4ab0aa440d8ce20b008887509663",
+  "changed_sources": [
+    "snapshot/src/realistic/realistic_voice_dsp.v"
+  ],
+  "voices": 32,
+  "resources": {
+    "Logic": 15573.0,
+    "Register": 13472.0,
+    "BSRAM": 108.0,
+    "DSP": 26.5
+  },
+  "timing": {
+    "setup_violations": 0,
+    "setup_worst_path": {
+      "slack_ns": 0.224,
+      "source": "video/h1_7_s0/Q",
+      "target": "video/ch2_2_s0/D"
+    },
+    "hold_violations": 0,
+    "hold_worst_path": {
+      "slack_ns": 0.052,
+      "source": "u_top/g_fx_on.u_fx/g_on.u_c3/wp_9_s0/Q",
+      "target": "u_top/g_fx_on.u_fx/g_on.u_c3/mem_mem_0_0_s/ADB[12]"
+    }
+  },
+  "pins_unchanged": true,
+  "cello_full_attack_ticks": {
+    "before": 32768,
+    "after": 4096
+  },
+  "cello_t90_ticks": {
+    "before": 29492,
+    "after": 3687
+  },
+  "ep_state_bit_exact": true,
+  "cello_held_release_bit_exact": true,
+  "stereo_metrics": {
+    "ep_E4": {
+      "correlation": 0.5989777996266379,
+      "minor_major_energy_ratio": 0.25011699663353704,
+      "peak": 29829.0
+    },
+    "cello_E4": {
+      "correlation": 0.6361877509175552,
+      "minor_major_energy_ratio": 0.1858495291076104,
+      "peak": 17878.0
+    }
+  },
+  "hardware_audition_pending": true,
+  "version": "main_Y_HDMI_final",
+  "built_as": "main_y_hdmi_cello40",
+  "promoted_from": "firmware/candidates/main_Y_HDMI_cello40",
+  "online_duet_songs": [
+    "小星星"
+  ],
+  "online_solo_songs": {
+    "欢乐颂": "电钢独奏",
+    "卡农（片段）": "大提琴独奏",
+    "送别": "大提琴独奏",
+    "生日快乐": "电钢独奏",
+    "音阶上行": "电钢独奏"
+  },
+  "hardware_confirmed": false,
+  "offline_song_protocol": "S/K/P/X melody only"
+}
