@@ -1,0 +1,12 @@
+{
+  "commit": "06e7d8b118d345915ab6f257b7c22226f81575cd",
+  "files": 49,
+  "bytes": 621904.0,
+  "repository": "https://github.com/sipeed/TangMega-138K-example",
+  "subdirectory": "ch569_hspi2cdc/CH569_HSPI_USB",
+  "modified": {
+    "User/Main.c": "e5d412f898c75db4e4351851245ed40775bf392fc9b00e03d8570176dcde50cf",
+    "User/CDC/cdc.c": "2d8bc97dd8826422c2716d00092830aff7f358d183724dcb8a741237154ad089",
+    "Peripheral/inc/CH56x_common.h": "617cf9a7ff4ec9f98450b2a9779d4f0a300ea770586fc20dfff2592d7d68844f"
+  }
+}

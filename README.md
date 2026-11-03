@@ -20,6 +20,7 @@ TANG_MEGA_60K/
 │   ├── web/                     # 网页控制端（琴键/曲谱/参数）
 │   ├── tools/                   # 蓝牙桥接与应用管理脚本
 │   └── materials/               # 乐曲素材（卡农/小星星 脱机主旋律与校验）
+├── ch569/                   # 板载 CH569 (USB3.0 桥) 固件: HSPI+USB 高速链路 (MounRiver C 工程)
 ├── docs/                    # 接口文档（串口协议/接口状态/接口图）
 ├── verification/            # 金标准校验链：TB + canon 基准 + run_rtl.py
 ├── SHA256.json              # 提交文件校验清单
